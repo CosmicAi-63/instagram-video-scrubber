@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Instagram Video Scrubber fixture</title>
+  <style>
+    :root { color-scheme: dark; font: 16px/1.5 Arial, sans-serif; background: #141414; color: #f5f5f5; }
+    body { max-width: 760px; margin: 32px auto; padding: 0 20px; }
+    h1 { font-size: 1.25rem; }
+    p { max-width: 55ch; color: #d0d0d0; }
+    video:focus-visible { outline: 3px solid #fff; outline-offset: 3px; }
+    video { display: block; width: min(100%, 620px); aspect-ratio: 16 / 9; margin-top: 20px; background: #050505; }
+  </style>
+</head>
+<body>
+  <h1>Local video fixture</h1>
+  <p>This local four-second video lets you try the seek bar. Use the bar with a pointer or arrow keys.</p>
+  <video controls playsinline aria-label="Sample video" src="sample.mp4">
+    <track kind="captions" src="captions.vtt" srclang="en" label="English">
+  </video>
+  <script src="visibility.js"></script>
+  <script src="media-actions.js"></script>
+  <script src="content.js"></script>
+</body>
+</html>

@@ -1,0 +1,17 @@
+{
+  "manifest_version": 3,
+  "name": "Instagram Video Scrubber",
+  "version": "1.3.0",
+  "description": "Add video seeking, video downloads, and caption transcript actions to Instagram.",
+  "permissions": ["downloads"],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://www.instagram.com/*", "https://instagram.com/*"],
+      "js": ["visibility.js", "media-actions.js", "content.js"],
+      "run_at": "document_idle"
+    }
+  ]
+}
