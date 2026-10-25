@@ -1,6 +1,11 @@
 # Instagram Video Scrubber
 
-A Brave/Chrome extension that adds a seek bar and a working **Download video** button to Instagram Reels and video posts.
+A Brave/Chrome extension that makes Instagram videos easier to use.
+
+- Adds a seek bar so you can scrub through Reels and video posts, like on YouTube.
+- Lets you download Instagram videos as MP4 files.
+- Can copy or download a video's captions as a transcript, when it has them.
+- Runs only on instagram.com and collects no data.
 
 ## Quick start
 
@@ -38,3 +43,7 @@ node visibility.test.cjs && node media-actions.test.cjs && node recording.test.c
 ```
 
 Open `fixture.html` to try the seek bar on a local sample video without Instagram.
+
+## License
+
+[MIT](LICENSE)
